@@ -6,6 +6,7 @@ const { v4: generateId } = require('uuid');
 const dataStoragePath = path.join('/demo', 'data', 'data-storage.json');
 
 async function loadStorageData() {
+  console.log("called load storage Data");
   const fileContent = await fs.readFile(dataStoragePath);
   const data = JSON.parse(fileContent);
   return data;
