@@ -3,7 +3,7 @@ const fs = require('fs/promises');
 
 const { v4: generateId } = require('uuid');
 
-const dataStoragePath = path.join('/demo', 'data', 'data-storage.json');
+const dataStoragePath = path.join('demo', 'data', 'data-storage.json');
 
 async function loadStorageData() {
   console.log("called load storage Data");
